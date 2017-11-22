@@ -19,7 +19,7 @@ end
     else
       @user = User.create(:username => params[:username], :email => params[:email], :password => params[:password])
       session[:user_id] = @user.id
-      redirect to '/tweets'
+        redirect to '/tweets'
     end
   end
 
