@@ -50,13 +50,11 @@ end
     else
       @tweet = Tweet.find_by_id(params[:id])
       @tweet.content = params[:content]
-      @tweet.save 
+      @tweet.save
       redirect to '/tweets'
     end
   end
-      
 
-  end
 
   delete '/tweets/:id/delete' do
     if logged_in?
