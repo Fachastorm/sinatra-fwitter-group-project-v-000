@@ -22,7 +22,7 @@ end
         redirect to '/tweets/new'
       else
         @tweet = current_user.tweets.create(:content => params[:content])
-        redirect to '/tweets/#{@tweet.id}'
+        redirect to "/tweets/#{@tweet.id}"
       end
   end
 
