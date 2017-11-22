@@ -44,6 +44,7 @@ end
   end
 end
 
+  delete '/tweets/:id/delete' do 
 
 
  end
