@@ -51,7 +51,7 @@ end
       @tweet = Tweet.find_by_id(params[:id])
       @tweet.content = params[:content]
       @tweet.save
-      redirect to '/tweets'
+      redirect to "/tweets/#{@tweet.id}"
     end
   end
 
