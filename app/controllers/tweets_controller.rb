@@ -44,7 +44,11 @@ end
   end
 end
 
-  patch 
+  patch '/tweets/:id' do
+
+
+  end
+
   delete '/tweets/:id/delete' do
     if logged_in?
       @tweet = Tweet.find_by_id(params[:id])
